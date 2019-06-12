@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Kamonwan Music Academy</h1>
+      <h3>Best Academy Best Instructor</h3>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./signup.html">Sign Up</a></li>
+          <li><a href="./course.html">Course</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <h3>Sign Up</h3>
+        <p>You can sign up below</p>
+
+    <section id="signup">
+      <form action="./recieve.html" method="POST">
+
+        <section class="name">
+          <label for="firstname">First name:</label>
+          <input type="text" name="firstname" id="firstname" required>
+          <label for="lastname">Last name:</label>
+          <input type="text" name="lastname" id="lastname" required>
+        </section>
+        <br>
+        <section class="username">
+          <span>Set your User/Password</span>
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" minlength="5" maxlength="10" pattern="[a-zA-Z0-9]+" required>
+          <label for="user-pw">Password:</label>
+          <input type="password" name="password" id="user-pw" minlength="5" maxlength="10" required>
+        </section>
+        <br>
+        <section class="sex">
+          <span>Sex</span>
+          <input type="radio" name="sex" id="male" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" name="sex" id="female" value="female">
+          <label for="female">female</label>
+        </section>
+        <br>
+        <section class="mail-old">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+          <label for="amount">how old are you?</label>
+          <input type="number" step="1" name="amount" id="amount" min="5" max="50" required>
+        </section>
+        <br>
+        <section class="instrument">
+          <span>What instrument do you interested?</span>
+          <br>
+          <input type="checkbox" name="instrument" id="piano" value="piano">
+          <label for="piano">Piano</label>
+          <input type="checkbox" name="instrument" id="guitar" value="guitar">
+          <label for="guitar">guitar</label>
+          <input type="checkbox" name="instrument" id="drums" value="drums">
+          <label for="drums">Drums</label>
+        </section>
+        <br>
+        <section class="level">
+          <label for="level">What skill level are you in?</label>
+          <br>
+          <span>Beginner</span>
+          <input type="range" name="level" id="level" min="0" max="2" step="1">
+          <span>Advance</span>
+        </section>
+        <br>
+        <section class="purpose">
+          <label for="pursose">What is your purpose to study music?</label>
+          <select id="purpose" name="purpose">
+            <option value="hobby">Hobby</option>
+            <option value="study">Study</option>
+            <option value="career">Career</option>
+            <option valur="others">Other</option>
+          </select>
+        </section>
+        <br>
+        <section class="location">
+          <label for="location">Where do you live?</label>
+            <input list="locations" id="location" name="locations">
+            <datalist id="locations">
+              <option value="bangbon"></option>
+              <option value="bangkhae"></option>
+              <option value="sampran"></option>
+              <option value="phetkasaem"></option>
+            </datalist>
+         </section>
+         <hr>
+         <section class="extra-info">
+            <label for="extra">Anything else you want to recommend?</label>
+            <br>
+            <textarea name="extra" id="extra" rows="4" cols="70"></textarea>
+        </section>
+        <hr>
+        <section class="submission">
+          <input type="submit" value="Signup">
+        </section>
+      </form>
+    </section>
+  </body>
+
+  <footer>
+  </footer>
+
+</html>

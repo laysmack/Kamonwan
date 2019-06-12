@@ -1,0 +1,53 @@
+.main {
+  background-image: url("http://www.fumcwl.org/files/69/Pictures/music.jpg");
+  /* background-size: ; */
+  height: 700px;
+  width: 100%;
+}
+
+nav {
+  background-color: pink;
+  height: 90px;
+}
+
+nav li {
+  display: inline;
+}
+
+.submission-login {
+  float: right;
+}
+
+.pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  text-transform: uppercase;
+}
+
+h2 {
+  color: red;
+  font-family: fantasy;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  opacity: 0.65;  /* 0 - 1 */
+}
+
+.content {
+  color: blue !important;
+}
+
+h2.content {
+  color: green;
+  border: 3px solid black;
+}
+
+.khead, p {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: uppercase;
+}
